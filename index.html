@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Superviral — OnlyFans Agency for Top 1% Creators</title>
+  <meta name="description" content="Superviral is a boutique OnlyFans management agency. We grow creators to 6 and 7 figures with full chatting, content, and marketing. Apply for a free strategy call." />
+  <meta property="og:title" content="Superviral — OnlyFans Agency for Top 1% Creators" />
+  <meta property="og:description" content="A boutique OnlyFans management agency. We grow creators to 6 and 7 figures with full chatting, content, and marketing." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://superviral.agency" />
+  <meta name="theme-color" content="#0a0810" />
+  <link rel="canonical" href="https://superviral.agency/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Background gradient mesh + noise -->
+  <div class="bg-mesh" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <div class="bg-noise" aria-hidden="true"></div>
+  <div class="cursor-halo" id="cursorHalo" aria-hidden="true"></div>
+
+  <!-- Top ticker -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>★ Now booking Q2 strategy calls</span>
+      <span>—</span>
+      <span>Roster capped at 50</span>
+      <span>—</span>
+      <span>$8.4M generated this year</span>
+      <span>—</span>
+      <span>Avg. creator: top 0.4%</span>
+      <span>—</span>
+      <span>24/7 chatting · 6 timezones</span>
+      <span>—</span>
+      <span>★ Now booking Q2 strategy calls</span>
+      <span>—</span>
+      <span>Roster capped at 50</span>
+      <span>—</span>
+      <span>$8.4M generated this year</span>
+      <span>—</span>
+      <span>Avg. creator: top 0.4%</span>
+      <span>—</span>
+      <span>24/7 chatting · 6 timezones</span>
+      <span>—</span>
+    </div>
+  </div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="#top" data-magnet>
+        <span class="logo-mark">
+          <svg viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <radialGradient id="flame-red" cx="50%" cy="65%" r="55%">
+                <stop offset="0%" stop-color="#ff7a3c"/>
+                <stop offset="55%" stop-color="#ff3d3d"/>
+                <stop offset="100%" stop-color="#c81e1e"/>
+              </radialGradient>
+              <radialGradient id="flame-orange" cx="50%" cy="70%" r="55%">
+                <stop offset="0%" stop-color="#ffe27a"/>
+                <stop offset="55%" stop-color="#ffae3c"/>
+                <stop offset="100%" stop-color="#ff6b1f"/>
+              </radialGradient>
+              <radialGradient id="flame-yellow" cx="50%" cy="80%" r="55%">
+                <stop offset="0%" stop-color="#ffffff"/>
+                <stop offset="40%" stop-color="#fff5a8"/>
+                <stop offset="100%" stop-color="#ffd24d"/>
+              </radialGradient>
+              <radialGradient id="flame-blue" cx="50%" cy="55%" r="55%">
+                <stop offset="0%" stop-color="#a8e0ff"/>
+                <stop offset="55%" stop-color="#5cb4ff"/>
+                <stop offset="100%" stop-color="#3a6cff"/>
+              </radialGradient>
+            </defs>
+            <!-- Outer red flame with iOS-style curl -->
+            <g class="flame-outer">
+              <path d="M40 6
+                       C 42 14, 48 18, 52 26
+                       C 56 34, 56 44, 52 52
+                       C 56 50, 58 46, 58 42
+                       C 58 56, 50 70, 32 76
+                       C 14 70, 6 56, 6 42
+                       C 6 32, 12 24, 18 20
+                       C 16 26, 20 30, 24 28
+                       C 22 22, 26 14, 32 10
+                       C 34 14, 36 16, 38 14
+                       C 38 10, 39 8, 40 6 Z"
+                    fill="url(#flame-red)"/>
+            </g>
+            <!-- Mid orange flame -->
+            <g class="flame-mid">
+              <path d="M36 22
+                       C 38 28, 44 32, 46 40
+                       C 48 48, 46 56, 40 62
+                       C 34 68, 24 68, 18 60
+                       C 14 54, 14 46, 18 40
+                       C 16 44, 20 46, 22 42
+                       C 22 36, 26 30, 32 26
+                       C 33 28, 34 28, 35 26
+                       C 35 24, 36 23, 36 22 Z"
+                    fill="url(#flame-orange)"/>
+            </g>
+            <!-- Inner yellow/white flame -->
+            <g class="flame-inner">
+              <path d="M34 38
+                       C 36 42, 40 46, 40 52
+                       C 40 60, 34 64, 30 64
+                       C 24 64, 22 58, 24 52
+                       C 25 56, 27 56, 28 53
+                       C 28 48, 30 44, 33 42
+                       C 33 41, 34 40, 34 38 Z"
+                    fill="url(#flame-yellow)"/>
+            </g>
+            <!-- Blue base -->
+            <g class="flame-base">
+              <ellipse cx="32" cy="68" rx="10" ry="6" fill="url(#flame-blue)" opacity="0.85"/>
+            </g>
+            <!-- Bright white core -->
+            <g class="flame-core">
+              <ellipse cx="32" cy="56" rx="3" ry="6" fill="#ffffff"/>
+            </g>
+          </svg>
+        </span>
+        <span class="logo-text">Superviral</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#results">Results</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#apply" class="btn btn-primary btn-sm" data-magnet>
+        <span>Apply now</span>
+        <span class="btn-arrow">→</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1 class="reveal">
+          We turn talented creators<br />
+          into <em class="serif-italic">7-figure</em> brands.
+        </h1>
+        <p class="lede reveal">
+          A full-service OnlyFans agency for the top 1%. Chatting, content,
+          marketing, and growth — handled. You create. We do everything else.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#apply" class="btn btn-primary btn-lg" data-magnet>
+            <span>Apply for management</span>
+            <span class="btn-arrow">→</span>
+          </a>
+          <a href="#process" class="btn btn-ghost btn-lg" data-magnet>
+            <span>See how it works</span>
+          </a>
+        </div>
+
+        <div class="hero-stats reveal">
+          <div class="stat">
+            <div class="stat-num" data-counter="8.4" data-suffix="M+" data-prefix="$">$0M+</div>
+            <div class="stat-label">Generated for creators</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-counter="40" data-suffix="+">0+</div>
+            <div class="stat-label">Active models</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-counter="312" data-suffix="%">0%</div>
+            <div class="stat-label">Avg. revenue lift</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">0.4<span class="stat-tail">% top</span></div>
+            <div class="stat-label">Creator rank</div>
+          </div>
+        </div>
+
+        <div class="hero-scroll" aria-hidden="true">
+          <span>Scroll</span>
+          <span class="scroll-line"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE / FEATURED MARQUEE -->
+    <section class="marquee">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span class="m-item">★ XBIZ</span>
+          <span class="m-item">AVN</span>
+          <span class="m-item">YNOT</span>
+          <span class="m-item">ADULT INDUSTRY TODAY</span>
+          <span class="m-item">FORBES</span>
+          <span class="m-item">BUSINESS INSIDER</span>
+          <span class="m-item">ROLLING STONE</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span class="m-item">★ XBIZ</span>
+          <span class="m-item">AVN</span>
+          <span class="m-item">YNOT</span>
+          <span class="m-item">ADULT INDUSTRY TODAY</span>
+          <span class="m-item">FORBES</span>
+          <span class="m-item">BUSINESS INSIDER</span>
+          <span class="m-item">ROLLING STONE</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">01 — What we do</span>
+          <h2>Everything you don't want<br/>to do, done at the highest level.</h2>
+          <p class="muted">A full back-office for the modern creator. No fluff, no agencies-of-agencies, no surprises.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card tilt reveal">
+            <div class="card-num">01</div>
+            <h3>24/7 Chatting</h3>
+            <p>Trained sexters across every timezone. Average chatter revenue +312% in the first 60 days. PPV-first scripts, not generic auto-responses.</p>
+            <div class="card-tags">
+              <span>PPV scripts</span>
+              <span>Fan segmentation</span>
+              <span>Custom requests</span>
+            </div>
+          </article>
+          <article class="card tilt reveal">
+            <div class="card-num">02</div>
+            <h3>Content Production</h3>
+            <p>Solo, B/G, custom requests, and weekly drops. Studio access in LA, Miami, and London. We help direct, edit, and post.</p>
+            <div class="card-tags">
+              <span>Studio</span>
+              <span>Editing</span>
+              <span>Posting</span>
+            </div>
+          </article>
+          <article class="card tilt reveal">
+            <div class="card-num">03</div>
+            <h3>Growth &amp; Marketing</h3>
+            <p>X, Reddit, TikTok funnels. Paid ads where the math works. SEO on creator pages. We bring fans, not followers.</p>
+            <div class="card-tags">
+              <span>Paid social</span>
+              <span>SEO</span>
+              <span>Funnels</span>
+            </div>
+          </article>
+          <article class="card tilt reveal">
+            <div class="card-num">04</div>
+            <h3>Strategy</h3>
+            <p>Pricing audits, PPV calendars, custom upsell flows, fan segmentation. The math behind every top-1% account.</p>
+            <div class="card-tags">
+              <span>Pricing</span>
+              <span>Calendars</span>
+              <span>Upsells</span>
+            </div>
+          </article>
+          <article class="card tilt reveal">
+            <div class="card-num">05</div>
+            <h3>DMCA &amp; Protection</h3>
+            <p>We hunt and take down leaks. Persona protection, identity scrubbing, and account security baked in.</p>
+            <div class="card-tags">
+              <span>Takedowns</span>
+              <span>Privacy</span>
+              <span>Security</span>
+            </div>
+          </article>
+          <article class="card tilt reveal">
+            <div class="card-num">06</div>
+            <h3>Business &amp; Tax</h3>
+            <p>LLC setup guidance, banking, accountant referrals, and clean monthly reporting so you actually know what you make.</p>
+            <div class="card-tags">
+              <span>LLC</span>
+              <span>Banking</span>
+              <span>Reporting</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">02 — How it works</span>
+          <h2>Four steps from application<br/>to your first record month.</h2>
+        </div>
+
+        <div class="process">
+          <div class="process-line" aria-hidden="true"></div>
+          <ol class="steps">
+            <li class="step reveal">
+              <div class="step-pill">01</div>
+              <h3>Apply</h3>
+              <p>Tell us about your account, goals, and current numbers. We respond within 24 hours.</p>
+            </li>
+            <li class="step reveal">
+              <div class="step-pill">02</div>
+              <h3>Strategy Call</h3>
+              <p>30 minutes with a senior manager. We map exactly what we'd do in your first 90 days.</p>
+            </li>
+            <li class="step reveal">
+              <div class="step-pill">03</div>
+              <h3>Onboarding</h3>
+              <p>Contracts signed, chatters assigned, pricing reset, content calendar built. Live in under 7 days.</p>
+            </li>
+            <li class="step reveal">
+              <div class="step-pill">04</div>
+              <h3>Scale</h3>
+              <p>Weekly reporting, monthly strategy reviews. Most creators 3–10x revenue inside the first quarter.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section id="results" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">03 — Results</span>
+          <h2>Numbers don't lie.</h2>
+        </div>
+
+        <div class="grid grid-3 results">
+          <article class="result-card reveal">
+            <div class="result-chart">
+              <svg viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="g1" x1="0" x2="1">
+                    <stop offset="0" stop-color="#e9c789" stop-opacity="0.0"/>
+                    <stop offset="1" stop-color="#ff5c97" stop-opacity="1"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0,70 Q40,68 60,55 T120,30 T200,8" fill="none" stroke="url(#g1)" stroke-width="2.5"/>
+                <path d="M0,70 Q40,68 60,55 T120,30 T200,8 L200,80 L0,80 Z" fill="url(#g1)" opacity="0.18"/>
+              </svg>
+            </div>
+            <div class="result-stat">$0 → $84k<span>/mo</span></div>
+            <p>"Superviral rebuilt my pricing, my chatting, my content schedule. I went from breaking even to top 0.5% in four months."</p>
+            <div class="result-meta">
+              <span>Creator A</span>
+              <span class="dot-sep">·</span>
+              <span>LA</span>
+              <span class="dot-sep">·</span>
+              <span>4 months</span>
+            </div>
+          </article>
+
+          <article class="result-card reveal">
+            <div class="result-chart">
+              <svg viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0,60 Q30,50 60,45 T120,25 T200,12" fill="none" stroke="url(#g1)" stroke-width="2.5"/>
+                <path d="M0,60 Q30,50 60,45 T120,25 T200,12 L200,80 L0,80 Z" fill="url(#g1)" opacity="0.18"/>
+              </svg>
+            </div>
+            <div class="result-stat">+412%<span> revenue</span></div>
+            <p>"I was already making money. Superviral doubled it twice. Their chatters convert like nothing I've seen."</p>
+            <div class="result-meta">
+              <span>Creator B</span>
+              <span class="dot-sep">·</span>
+              <span>Miami</span>
+              <span class="dot-sep">·</span>
+              <span>6 months</span>
+            </div>
+          </article>
+
+          <article class="result-card reveal">
+            <div class="result-chart">
+              <svg viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0,75 Q50,72 80,55 T140,22 T200,5" fill="none" stroke="url(#g1)" stroke-width="2.5"/>
+                <path d="M0,75 Q50,72 80,55 T140,22 T200,5 L200,80 L0,80 Z" fill="url(#g1)" opacity="0.18"/>
+              </svg>
+            </div>
+            <div class="result-stat">Top 0.1%<span> in 9mo</span></div>
+            <p>"They actually care. I'm not just a number, I'm a brand they're building."</p>
+            <div class="result-meta">
+              <span>Creator C</span>
+              <span class="dot-sep">·</span>
+              <span>London</span>
+              <span class="dot-sep">·</span>
+              <span>9 months</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="section section-alt">
+      <div class="container two-col">
+        <div class="reveal">
+          <span class="eyebrow">04 — Why us</span>
+          <h2>Boutique,<br/><em class="serif-italic">not a sweatshop.</em></h2>
+          <p class="muted">
+            Most agencies sign 200+ creators and assign you a chatter on day 47. We cap at 50.
+            Every creator gets a dedicated manager, dedicated chatting team, and a strategy
+            built for their brand — not a template.
+          </p>
+          <ul class="checklist">
+            <li><span>Capped roster</span> — you'll never be ignored.</li>
+            <li><span>Non-exclusive</span> — keep your other platforms.</li>
+            <li><span>Performance-based</span> — we win when you win.</li>
+            <li><span>Transparent splits</span> &amp; reporting.</li>
+            <li><span>Month-to-month</span> after onboarding. No traps.</li>
+          </ul>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-meta">
+            <div class="why-avatar"></div>
+            <div>
+              <div class="why-name">Founder</div>
+              <div class="why-role">Superviral</div>
+            </div>
+          </div>
+          <p class="why-quote-text">
+            We built Superviral because the agency we wished existed didn't. No 50% cuts. No
+            predatory contracts. No managers who ghost you. Just a small team obsessed with
+            making our creators rich.
+          </p>
+          <div class="why-divider"></div>
+          <div class="why-foot">
+            <div>
+              <div class="why-stat">5+ yrs</div>
+              <div class="why-cap">Industry</div>
+            </div>
+            <div>
+              <div class="why-stat">$8.4M</div>
+              <div class="why-cap">Generated</div>
+            </div>
+            <div>
+              <div class="why-stat">50</div>
+              <div class="why-cap">Roster cap</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REACH / OUR TRAFFIC -->
+    <section id="reach" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">05 — Our reach</span>
+          <h2>Real audience.<br/><em class="serif-italic">Real numbers.</em></h2>
+          <p class="muted">Every creator on our roster gets exposure across our owned channels. Below is what we bring to the table.</p>
+        </div>
+
+        <div class="reach-stats reveal">
+          <div class="reach-stat">
+            <div class="reach-num" id="reachFollowers">—</div>
+            <div class="reach-label">Total followers</div>
+          </div>
+          <div class="reach-stat">
+            <div class="reach-num" id="reachImpressions">—</div>
+            <div class="reach-label">Monthly impressions</div>
+          </div>
+          <div class="reach-stat">
+            <div class="reach-num" id="reachEngagement">—</div>
+            <div class="reach-label">Engagement rate</div>
+          </div>
+          <div class="reach-stat">
+            <div class="reach-num small" id="reachAudience">—</div>
+            <div class="reach-label">Audience</div>
+          </div>
+        </div>
+
+        <div class="reach-embeds reveal" id="reachEmbeds" hidden>
+          <div class="section-subhead">
+            <span class="eyebrow-mini">Featured posts</span>
+            <p class="muted small">Live engagement. These numbers are pulled directly from X.</p>
+          </div>
+          <div class="embeds-grid" id="embedsGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">06 — FAQ</span>
+          <h2>The questions creators<br/>always ask.</h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary><span>What's your split?</span><span class="faq-icon"></span></summary>
+            <p>It depends on your current revenue and what services you take. Standard full management is 40–50%. We give you the exact number on the strategy call — no surprises.</p>
+          </details>
+          <details>
+            <summary><span>Do I need to be making money already?</span><span class="faq-icon"></span></summary>
+            <p>Not necessarily. We take a small number of high-potential new creators each month. Most of our roster was making between $2k and $50k/mo when they joined.</p>
+          </details>
+          <details>
+            <summary><span>Will I have to do more content?</span><span class="faq-icon"></span></summary>
+            <p>Usually less than you're doing now. We optimize what already works and only ask for new content where the data shows it pays off.</p>
+          </details>
+          <details>
+            <summary><span>How long are contracts?</span><span class="faq-icon"></span></summary>
+            <p>Month to month after a 60-day onboarding. If we're not delivering, you can walk. We bet on the work.</p>
+          </details>
+          <details>
+            <summary><span>Are my chats handled by humans?</span><span class="faq-icon"></span></summary>
+            <p>Yes. Trained, vetted, NDA'd chatters in your time zone. We use AI for speed, but every message that goes out is reviewed by a human on your team.</p>
+          </details>
+          <details>
+            <summary><span>Do you work with male / gay-niche creators?</span><span class="faq-icon"></span></summary>
+            <p>Yes. We have dedicated managers and chatting teams for the gay/male niche. It's one of our fastest-growing segments.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPLY / CTA -->
+    <section id="apply" class="cta">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="cta-glow" aria-hidden="true"></div>
+          <span class="eyebrow">07 — Apply now</span>
+          <h2>Ready to scale?<br/><em class="serif-italic">Tell us about you.</em></h2>
+          <p class="muted">We respond to every serious application within 24 hours. Spots are limited each month.</p>
+
+          <form class="form" id="applyForm" novalidate>
+            <div class="row">
+              <label>
+                <span class="lab">Your name</span>
+                <input required type="text" name="name" placeholder="Jane Doe" autocomplete="name" />
+              </label>
+              <label>
+                <span class="lab">Email</span>
+                <input required type="email" name="email" placeholder="you@email.com" autocomplete="email" />
+              </label>
+            </div>
+            <div class="row">
+              <label>
+                <span class="lab">Social platform</span>
+                <select name="handle_type" required>
+                  <option value="">Select platform...</option>
+                  <option value="twitter">X / Twitter</option>
+                  <option value="telegram">Telegram</option>
+                  <option value="instagram">Instagram</option>
+                  <option value="skype">Skype</option>
+                </select>
+              </label>
+              <label>
+                <span class="lab">Your handle</span>
+                <input required type="text" name="handle_value" placeholder="@yourhandle" />
+              </label>
+            </div>
+            <div class="row">
+              <label>
+                <span class="lab">Current monthly revenue</span>
+                <select name="revenue" required>
+                  <option value="">Select range...</option>
+                  <option>$0 – $2k</option>
+                  <option>$2k – $10k</option>
+                  <option>$10k – $30k</option>
+                  <option>$30k – $100k</option>
+                  <option>$100k+</option>
+                </select>
+              </label>
+              <label>
+                <span class="lab">OnlyFans username (optional)</span>
+                <input type="text" name="of_handle" placeholder="@yourof" />
+              </label>
+            </div>
+            <label>
+              <span class="lab">Tell us about your goals</span>
+              <textarea name="message" rows="4" placeholder="Where do you want to be in 6 months?"></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary btn-lg form-submit" data-magnet>
+              <span>Submit application</span>
+              <span class="btn-arrow">→</span>
+            </button>
+            <p class="form-fineprint">We respect your privacy. Applications are reviewed by senior staff only.</p>
+          </form>
+
+          <!-- Success state (hidden by default) -->
+          <div class="form-success" id="formSuccess" hidden>
+            <div class="success-icon">
+              <svg viewBox="0 0 48 48" width="48" height="48" aria-hidden="true">
+                <circle cx="24" cy="24" r="22" fill="none" stroke="url(#flame-orange)" stroke-width="2"/>
+                <path d="M14 25 L21 32 L34 18" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="success-title">Application received.</h3>
+            <p class="success-text">
+              We'll review and reply within 24 hours. Want a faster response? Reach out on Telegram now.
+            </p>
+            <a href="https://t.me/Digitaljoshy" id="telegramBtn" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+              <span>Message us on Telegram</span>
+              <span class="btn-arrow">→</span>
+            </a>
+            <p class="success-fine">Avg. response time on Telegram: under 10 minutes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="#top">
+          <span class="logo-mark">
+            <svg viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <g class="flame-outer">
+                <path d="M40 6 C 42 14, 48 18, 52 26 C 56 34, 56 44, 52 52 C 56 50, 58 46, 58 42 C 58 56, 50 70, 32 76 C 14 70, 6 56, 6 42 C 6 32, 12 24, 18 20 C 16 26, 20 30, 24 28 C 22 22, 26 14, 32 10 C 34 14, 36 16, 38 14 C 38 10, 39 8, 40 6 Z"
+                      fill="url(#flame-red)"/>
+              </g>
+              <g class="flame-mid">
+                <path d="M36 22 C 38 28, 44 32, 46 40 C 48 48, 46 56, 40 62 C 34 68, 24 68, 18 60 C 14 54, 14 46, 18 40 C 16 44, 20 46, 22 42 C 22 36, 26 30, 32 26 C 33 28, 34 28, 35 26 C 35 24, 36 23, 36 22 Z"
+                      fill="url(#flame-orange)"/>
+              </g>
+              <g class="flame-inner">
+                <path d="M34 38 C 36 42, 40 46, 40 52 C 40 60, 34 64, 30 64 C 24 64, 22 58, 24 52 C 25 56, 27 56, 28 53 C 28 48, 30 44, 33 42 C 33 41, 34 40, 34 38 Z"
+                      fill="url(#flame-yellow)"/>
+              </g>
+              <g class="flame-base">
+                <ellipse cx="32" cy="68" rx="10" ry="6" fill="url(#flame-blue)" opacity="0.85"/>
+              </g>
+              <g class="flame-core">
+                <ellipse cx="32" cy="56" rx="3" ry="6" fill="#ffffff"/>
+              </g>
+            </svg>
+          </span>
+          <span class="logo-text">Superviral</span>
+        </a>
+        <p class="muted small">
+          A boutique OnlyFans management agency.<br/>
+          Built for the top 1%.
+        </p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4>Company</h4>
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#results">Results</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:hello@superviral.agency">hello@superviral.agency</a>
+          <a href="https://t.me/Digitaljoshy" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://x.com/yourhandle" target="_blank" rel="noopener">X / Twitter</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Superviral. All rights reserved.</span>
+      <span class="mono">superviral.agency</span>
+    </div>
+  </footer>
+
+  <!-- Floating Telegram CTA -->
+  <a href="https://t.me/Digitaljoshy" target="_blank" rel="noopener" class="floating-cta" id="floatingCta" aria-label="Message us on Telegram">
+    <span class="floating-cta-pulse"></span>
+    <svg class="floating-cta-icon" viewBox="0 0 24 24" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-8.609 3.33c-2.068.8-4.133 1.598-5.724 2.21a405.15 405.15 0 0 1-2.849 1.09c-.42.147-.99.332-1.473.901-.728.856-.2 1.934.222 2.39.332.358.737.532 1.007.64.754.303 1.528.593 2.285.885l.149.059c.199.076.42.161.559.293.14.134.197.313.254.497l.032.104.696 2.659c.063.24.13.494.217.742.064.18.358.937 1.175 1.001.357.028.692-.157.937-.406l1.79-1.82 3.138 2.431c.236.183.487.378.778.494a2.178 2.178 0 0 0 .919.163c1.037-.048 1.578-.985 1.753-1.527.035-.107.071-.222.107-.337l2.956-13.037c.122-.54.166-1.065-.065-1.591A2.1 2.1 0 0 0 21.2 2.433z" fill="#ffffff"/>
+    </svg>
+    <span class="floating-cta-label">Chat on Telegram</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
